@@ -1,6 +1,6 @@
 # next-router-events change log
 
-## next
+## 1.0.1
 
 - Added a change log.
 - Fixed the `lib` directory not being Git ignored.
