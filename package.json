@@ -1,0 +1,99 @@
+{
+  "name": "next-router-events",
+  "version": "1.0.0",
+  "description": "A more powerful Next.js router events API.",
+  "license": "MIT",
+  "author": {
+    "name": "Jayden Seric",
+    "email": "me@jaydenseric.com",
+    "url": "http://jaydenseric.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaydenseric/next-router-events.git"
+  },
+  "homepage": "https://github.com/jaydenseric/next-router-events#readme",
+  "bugs": "https://github.com/jaydenseric/next-router-events/issues",
+  "keywords": [
+    "nextjs",
+    "next",
+    "router",
+    "events"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "dependencies": {
+    "tiny-emitter": "^2.0.2"
+  },
+  "peerDependencies": {
+    "next": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "lint": "eslint .",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "eslintIgnore": [
+    "lib"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "curly": [
+        "error",
+        "multi"
+      ],
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8",
+            "browsers": "> 2%"
+          }
+        }
+      ]
+    ]
+  }
+}
