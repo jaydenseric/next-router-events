@@ -21,47 +21,32 @@
     "events"
   ],
   "files": [
-    "lib"
+    "index.js"
   ],
-  "main": "lib/index.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
   "dependencies": {
     "tiny-emitter": "^2.0.2"
   },
   "peerDependencies": {
-    "next": "^4.0.0"
+    "next": "^5.0.1-canary.7"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.9.0",
-    "eslint-plugin-prettier": "^2.3.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.2.3",
-    "prettier": "^1.7.4"
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1"
   },
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "lint": "eslint .",
+    "lint": "eslint . --fix && prettier '**/*.md' --write",
     "precommit": "lint-staged",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": "eslint",
+    "*.md": "prettier -l"
   },
-  "eslintIgnore": [
-    "lib"
-  ],
   "eslintConfig": {
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2017
-    },
     "env": {
-      "es6": true,
       "node": true,
       "browser": true
     },
@@ -80,20 +65,8 @@
     }
   },
   "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "8",
-            "browsers": "> 2%"
-          }
-        }
-      ]
-    ]
+    "proseWrap": "never",
+    "singleQuote": true,
+    "semi": false
   }
 }
