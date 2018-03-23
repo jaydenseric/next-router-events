@@ -1,6 +1,6 @@
 {
   "name": "next-router-events",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A more powerful Next.js router events API.",
   "license": "MIT",
   "author": {

@@ -1,6 +1,6 @@
 # next-router-events changelog
 
-## Next
+## 2.0.0
 
 * Updated dependencies and peer dependencies.
 * No longer using Babel.
