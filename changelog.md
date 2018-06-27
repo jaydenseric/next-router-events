@@ -7,6 +7,7 @@
 - Compact package `repository` field.
 - Setup Travis CI.
 - New ESLint config with [`eslint-config-env`](https://npm.im/eslint-config-env).
+- Smarter package scripts.
 
 ## 2.0.0
 
