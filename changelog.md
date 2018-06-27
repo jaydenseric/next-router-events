@@ -6,6 +6,7 @@
 - Updated Next.js peer dependency range to support v6.
 - Compact package `repository` field.
 - Setup Travis CI.
+- New ESLint config with [`eslint-config-env`](https://npm.im/eslint-config-env).
 
 ## 2.0.0
 
