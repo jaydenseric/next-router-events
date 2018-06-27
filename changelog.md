@@ -4,10 +4,11 @@
 
 - Updated dependencies.
 - Updated Next.js peer dependency range to support v6.
-- Compact package `repository` field.
-- Setup Travis CI.
 - New ESLint config with [`eslint-config-env`](https://npm.im/eslint-config-env).
 - Smarter package scripts.
+- Compact package `repository` field.
+- Setup Travis CI.
+- Readme tweaks, with some badges removed and a new Travis CI status badge added.
 
 ## 2.0.0
 

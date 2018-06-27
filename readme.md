@@ -1,16 +1,18 @@
 # next-router-events
 
-![npm version](https://img.shields.io/npm/v/next-router-events.svg) ![Licence](https://img.shields.io/npm/l/next-router-events.svg) ![Github issues](https://img.shields.io/github/issues/jaydenseric/next-router-events.svg) ![Github stars](https://img.shields.io/github/stars/jaydenseric/next-router-events.svg)
+[![Build status](https://travis-ci.org/jaydenseric/next-router-events.svg)](https://travis-ci.org/jaydenseric/next-router-events) [![npm version](https://img.shields.io/npm/v/next-router-events.svg)](https://npm.im/next-router-events)
 
-A more powerful Next.js router events API. The standard API can only handle one listener per router event (see [Next.js issue #2033](https://github.com/zeit/next.js/issues/2033)).
+A more powerful Next.js router events API. The standard API can only handle one listener per router event (see [zeit/next.js#2033](https://github.com/zeit/next.js/issues/2033)).
 
-## Usage
+## Setup
 
-Install with [npm](https://npmjs.com):
+To install [`next-router-events`](https://npm.im/next-router-events) from [npm](https://npmjs.com) run:
 
 ```
 npm install next-router-events
 ```
+
+## Usage
 
 To use router events:
 
