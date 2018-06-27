@@ -1,5 +1,9 @@
 # next-router-events changelog
 
+## Next
+
+* Updated Next.js peer dependency range to support v6.
+
 ## 2.0.0
 
 * Updated dependencies and peer dependencies.
