@@ -3,6 +3,7 @@
 ## Next
 
 * Updated Next.js peer dependency range to support v6.
+* Compact package `repository` field.
 
 ## 2.0.0
 
