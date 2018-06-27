@@ -21,7 +21,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "browserslist": ">1%",
   "peerDependencies": {
