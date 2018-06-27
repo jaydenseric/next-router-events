@@ -20,6 +20,9 @@
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">=4"
+  },
   "browserslist": ">1%",
   "peerDependencies": {
     "next": "5.0.1-canary.7 - 6"
@@ -29,7 +32,7 @@
   },
   "devDependencies": {
     "eslint": "^5.0.1",
-    "eslint-config-env": "^0.3.0",
+    "eslint-config-env": "^0.4.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-compat": "^2.4.0",
     "eslint-plugin-import": "^2.13.0",
