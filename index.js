@@ -3,9 +3,11 @@ var Router = require('next/router').default
 
 var routerEvents = [
   'routeChangeStart',
+  'beforeHistoryChange',
   'routeChangeComplete',
   'routeChangeError',
-  'beforeHistoryChange'
+  'hashChangeStart',
+  'hashChangeComplete'
 ]
 
 routerEvents.forEach(function(event) {
